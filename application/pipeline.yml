@@ -88,7 +88,7 @@ jobs:
       CF_MANIFEST: ((cf-dev-manifest))
       CF_API: ((cf-dev-api))
       CF_DOMAIN: ((cf-dev-domain))
-      CF_SPACE: ((cf_dev_space))
+      CF_SPACE: ((cf-dev-space))
       CF_ORG: ((cf-dev-org))
       CF_PWD: ((cf-password))
       CF_USER: ((cf-user))
