@@ -43,7 +43,7 @@ echo "apps_url: shows the apps assigned to the hostname: ${apps_url}"
 
 # TO DO: Finish the jq parsing
 # Fetch the app names assigned to the hostname
-app_names=`(cf curl $apps_url | jq -r '...')`
+app_names=`(cf curl $apps_url | jq -r '.resources[].entity | select(.name=="'"$APP_NAME"'") | .app_names'`
 
 for name in $app_names; do
     if [ "$name" != "$app_name" ]
